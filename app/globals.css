@@ -2,20 +2,157 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/public/fonts/Newsreader-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/public/fonts/Newsreader-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-style: italic;
+  font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Inter';
+  src: url('/public/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/public//fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-style: italic;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Newsreader';
+  font-size: 54px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+h2 {
+  font-family: 'Newsreader';
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+h3 {
+  font-family: 'Newsreader';
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+h4 {
+  font-family: 'Newsreader';
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+h5 {
+  font-family: 'Newsreader';
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+p,
+input,
+textarea,
+:link {
+  font-family: 'Newsreader';
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 1em 0;
+  padding-left: 30px;
+  list-style-type: disc;
+  font-family: 'Newsreader';
+  font-size: 16px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin: 0.5em 0;
+  font-family: 'Newsreader';
+  font-size: 16px;
+}
+
+button{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+section{
+  width: 100%;
+  padding: 48px 72px;
+}
+
+.primary-btn{
+  background-color: black;
+  color: white;
+  padding: 12px 36px;
+  border-radius: 8px;
+}
+
+.secondary-btn{
+  background-color: white;
+  color: black;
+  padding: 12px 36px;
+  border-radius: 8px;
+}
+
+.primary-btn:hover{
+  background-color: #E7BD70;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 250ms;
+}
+
+.secondary-btn:hover{
+  background-color: #E7BD70;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 250ms;
+}
+
+.nav{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  padding: 16px 72px;
+}
+
+.brand-attributes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  /* border-right: 2px dashed black; */
+  padding: 0px 24px;
+}
+
+.ba-elements{
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
 }

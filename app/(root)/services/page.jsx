@@ -18,7 +18,9 @@ const Services = () => {
           <Link href="/services/brand-identity">
             <button className="primary-btn">Brand Identity</button>
           </Link>
-          <button className="primary-btn">Packaging</button>
+          <Link href="/services/packaging">
+            <button className="primary-btn">Packaging</button>
+          </Link>
           <button className="primary-btn">Stationary</button>
           <button className="primary-btn">Social Media</button>
           <button className="primary-btn">I don't know, Please help!</button>
